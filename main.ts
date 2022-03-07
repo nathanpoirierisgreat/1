@@ -18,9 +18,6 @@ input.onButtonPressed(Button.A, function () {
         music.playMelody("B A G C D E F F ", 120)
     }
 })
-input.onButtonPressed(Button.B, function () {
-	
-})
 input.onGesture(Gesture.Shake, function () {
     basic.showLeds(`
         . . # . .
