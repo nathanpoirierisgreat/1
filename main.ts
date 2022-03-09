@@ -101,6 +101,7 @@ input.onButtonPressed(Button.B, function () {
             . . # . .
             `)
     }
+    basic.clearScreen()
 })
 input.onGesture(Gesture.Shake, function () {
     basic.showLeds(`
