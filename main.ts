@@ -18,6 +18,90 @@ input.onButtonPressed(Button.A, function () {
         music.playMelody("B A G C D E F F ", 120)
     }
 })
+input.onButtonPressed(Button.AB, function () {
+    for (let index = 0; index < 2; index++) {
+        for (let index = 0; index < 2; index++) {
+            music.playTone(392, music.beat(BeatFraction.Half))
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+            music.playTone(587, music.beat(BeatFraction.Quarter))
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+            music.playTone(392, music.beat(BeatFraction.Quarter))
+            music.playTone(523, music.beat(BeatFraction.Whole))
+            music.playTone(392, music.beat(BeatFraction.Whole))
+            music.playTone(0, music.beat(BeatFraction.Quarter))
+            music.playTone(392, music.beat(BeatFraction.Half))
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+            music.playTone(587, music.beat(BeatFraction.Quarter))
+            music.playTone(523, music.beat(BeatFraction.Quarter))
+            music.playTone(392, music.beat(BeatFraction.Quarter))
+            music.playTone(523, music.beat(BeatFraction.Half))
+            music.playTone(587, music.beat(BeatFraction.Half))
+            music.playTone(622, music.beat(BeatFraction.Half))
+            music.playTone(587, music.beat(BeatFraction.Half))
+            music.playTone(0, music.beat(BeatFraction.Quarter))
+        }
+        music.playTone(349, music.beat(BeatFraction.Quarter))
+        music.playTone(311, music.beat(BeatFraction.Quarter))
+        music.playTone(349, music.beat(BeatFraction.Half))
+        music.playTone(311, music.beat(BeatFraction.Quarter))
+        music.playTone(349, music.beat(BeatFraction.Half))
+        music.playTone(392, music.beat(BeatFraction.Half))
+        music.playTone(0, music.beat(BeatFraction.Quarter))
+        music.playTone(415, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Quarter))
+        music.playTone(349, music.beat(BeatFraction.Quarter))
+        music.playTone(311, music.beat(BeatFraction.Quarter))
+        music.playTone(311, music.beat(BeatFraction.Whole))
+        music.playTone(294, music.beat(BeatFraction.Half))
+        music.playTone(415, music.beat(BeatFraction.Half))
+        music.playTone(392, music.beat(BeatFraction.Double))
+        music.playTone(0, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Half))
+        music.playTone(415, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Quarter))
+        music.playTone(349, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Double))
+        music.playTone(0, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Quarter))
+        music.playTone(349, music.beat(BeatFraction.Quarter))
+        music.playTone(311, music.beat(BeatFraction.Quarter))
+        music.playTone(294, music.beat(BeatFraction.Quarter))
+        music.playTone(262, music.beat(BeatFraction.Half))
+        music.playTone(0, music.beat(BeatFraction.Quarter))
+    }
+})
+input.onButtonPressed(Button.B, function () {
+    for (let index = 0; index < 10000; index++) {
+        basic.showLeds(`
+            . . . . .
+            . . # . .
+            # # # # .
+            . # # . .
+            . # . # .
+            `)
+        basic.showLeds(`
+            . . # . .
+            . . # . .
+            . . # . .
+            . . # . .
+            . . # . .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . # . .
+            . # # # #
+            . . # # .
+            . # . # .
+            `)
+        basic.showLeds(`
+            . . # . .
+            . . # . .
+            . . # . .
+            . . # . .
+            . . # . .
+            `)
+    }
+})
 input.onGesture(Gesture.Shake, function () {
     basic.showLeds(`
         . . # . .
@@ -58,14 +142,56 @@ input.onGesture(Gesture.Shake, function () {
 for (let index = 0; index < 2; index++) {
     music.playTone(311, music.beat(BeatFraction.Whole))
     music.playTone(415, music.beat(BeatFraction.Whole))
+    music.playTone(466, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
     music.playTone(466, music.beat(BeatFraction.Whole))
-    music.playTone(523, music.beat(BeatFraction.Whole))
-    music.playTone(466, music.beat(BeatFraction.Whole))
-    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.playTone(392, music.beat(BeatFraction.Double))
+    music.playTone(0, music.beat(BeatFraction.Eighth))
     music.playTone(311, music.beat(BeatFraction.Whole))
     music.playTone(415, music.beat(BeatFraction.Whole))
     music.playTone(466, music.beat(BeatFraction.Whole))
+    music.playTone(523, music.beat(BeatFraction.Whole))
+    music.playTone(466, music.beat(BeatFraction.Double))
+    music.playTone(0, music.beat(BeatFraction.Eighth))
+    music.playTone(311, music.beat(BeatFraction.Whole))
+    music.playTone(415, music.beat(BeatFraction.Whole))
+    music.playTone(466, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.playTone(466, music.beat(BeatFraction.Whole))
+    music.playTone(392, music.beat(BeatFraction.Double))
+    music.playTone(0, music.beat(BeatFraction.Eighth))
+    music.playTone(311, music.beat(BeatFraction.Whole))
+    music.playTone(415, music.beat(BeatFraction.Whole))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.playTone(311, music.beat(BeatFraction.Whole))
+    music.playTone(311, music.beat(BeatFraction.Double))
+    music.playTone(0, music.beat(BeatFraction.Sixteenth))
 }
+for (let index = 0; index < 3; index++) {
+    music.playTone(622, music.beat(BeatFraction.Whole))
+    music.playTone(587, music.beat(BeatFraction.Whole))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.playTone(466, music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Whole))
+    music.playTone(466, music.beat(BeatFraction.Whole))
+    music.playTone(523, music.beat(BeatFraction.Whole))
+    music.playTone(415, music.beat(BeatFraction.Whole))
+    music.playTone(466, music.beat(BeatFraction.Whole))
+    music.playTone(0, music.beat(BeatFraction.Eighth))
+}
+for (let index = 0; index < 2; index++) {
+    music.playTone(311, music.beat(BeatFraction.Whole))
+    music.playTone(415, music.beat(BeatFraction.Whole))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.playTone(311, music.beat(BeatFraction.Whole))
+    music.playTone(311, music.beat(BeatFraction.Double))
+    music.playTone(0, music.beat(BeatFraction.Sixteenth))
+}
+music.playTone(311, music.beat(BeatFraction.Whole))
+music.playTone(415, music.beat(BeatFraction.Whole))
+music.playTone(392, music.beat(BeatFraction.Whole))
+music.playTone(311, music.beat(BeatFraction.Whole))
+music.playTone(311, music.beat(BeatFraction.Breve))
 basic.forever(function () {
 	
 })
