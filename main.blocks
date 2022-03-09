@@ -34,7 +34,7 @@
         . . # # . 
         . # . . . 
         . # # # .
-        `</field></block></next></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="Kmv^r=qruaw|d|wVBt:," x="282" y="2720"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="controls_repeat_ext" id="ilZGso/BW^.PXb}g`RPH"><value name="TIMES"><shadow type="math_whole_number" id="Yx}Gc%r?{LwTAQP0:`a2"><field name="NUM">10000</field></shadow></value><statement name="DO"><block type="device_show_leds" id="|/2gfsJ$AyRGS?^|/pPO"><field name="LEDS">`
+        `</field></block></next></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="Kmv^r=qruaw|d|wVBt:," x="282" y="2720"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="controls_repeat_ext" id="ilZGso/BW^.PXb}g`RPH"><value name="TIMES"><shadow type="math_whole_number" id="Yx}Gc%r?{LwTAQP0:`a2"><field name="NUM">18</field></shadow></value><statement name="DO"><block type="device_show_leds" id="|/2gfsJ$AyRGS?^|/pPO"><field name="LEDS">`
         . . . . . 
         . . # . . 
         # # # # . 

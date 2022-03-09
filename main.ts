@@ -71,7 +71,7 @@ input.onButtonPressed(Button.AB, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    for (let index = 0; index < 10000; index++) {
+    for (let index = 0; index < 18; index++) {
         basic.showLeds(`
             . . . . .
             . . # . .
